@@ -10,8 +10,8 @@ import Foundation
 class PodcastDataService {
     static let shared = PodcastDataService()
 
-    func getPodcast() async throws -> PodcastModel? {
-        guard let url = URL(string: "https://anchor.fm/s/7a186bc/podcast/rss") else { return nil }
+    func getPodcast(urlString: String) async throws -> PodcastModel? {
+        guard let url = URL(string: urlString) else { return nil }
 
         let (data, response) = try await URLSession.shared.data(from: url)
 

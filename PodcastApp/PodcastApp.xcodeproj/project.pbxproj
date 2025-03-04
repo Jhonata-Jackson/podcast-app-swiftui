@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A2DE6E592D77584F00AC2EC8 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A2DE6E582D77584F00AC2EC8 /* SDWebImageSwiftUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A22F883D2D72011200C150A1 /* PodcastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DE6E592D77584F00AC2EC8 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = PodcastApp;
 			packageProductDependencies = (
+				A2DE6E582D77584F00AC2EC8 /* SDWebImageSwiftUI */,
 			);
 			productName = PodcastApp;
 			productReference = A22F883D2D72011200C150A1 /* PodcastApp.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = A22F88342D72011200C150A1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A2DE6E572D77584F00AC2EC8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A22F883E2D72011200C150A1 /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A2DE6E572D77584F00AC2EC8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A2DE6E582D77584F00AC2EC8 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2DE6E572D77584F00AC2EC8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A22F88352D72011200C150A1 /* Project object */;
 }
